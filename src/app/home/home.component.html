@@ -1,0 +1,4 @@
+<input type="text" (keydown.enter)="addHappyMessage($event.target)" >
+<div *ngFor="let happyMessage of happyMessages$ | async" >
+  <p>{{ happyMessage.message }}</p>
+</div>
